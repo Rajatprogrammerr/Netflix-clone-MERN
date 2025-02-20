@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: black;
+}
+
+.hero-bg{
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5),rgba(0,0,0,1)),url("/hero.png");
+}
+.trending{
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.5),rgba(0,0,0,1)),url("ORIGINAL_IMG_BASE_URL + trendingContent?.backdrop_path");
+    /* width: 100vw; */
+}
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
